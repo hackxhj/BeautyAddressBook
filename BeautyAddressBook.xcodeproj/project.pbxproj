@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16AC53361BD8DCCC001EAA1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC53351BD8DCCC001EAA1F /* main.m */; };
+		16AC53391BD8DCCC001EAA1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC53381BD8DCCC001EAA1F /* AppDelegate.m */; };
+		16AC533C1BD8DCCC001EAA1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC533B1BD8DCCC001EAA1F /* ViewController.m */; };
+		16AC533F1BD8DCCC001EAA1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16AC533D1BD8DCCC001EAA1F /* Main.storyboard */; };
+		16AC53411BD8DCCC001EAA1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16AC53401BD8DCCC001EAA1F /* Assets.xcassets */; };
+		16AC53441BD8DCCC001EAA1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16AC53421BD8DCCC001EAA1F /* LaunchScreen.storyboard */; };
+		16AC534F1BD8DCCC001EAA1F /* BeautyAddressBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC534E1BD8DCCC001EAA1F /* BeautyAddressBookTests.m */; };
+		16AC535A1BD8DCCD001EAA1F /* BeautyAddressBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC53591BD8DCCD001EAA1F /* BeautyAddressBookUITests.m */; };
+		16AC536A1BD8DD78001EAA1F /* XHJAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC53691BD8DD78001EAA1F /* XHJAddressBook.m */; settings = {ASSET_TAGS = (); }; };
+		16AC536E1BD8DDBF001EAA1F /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC536D1BD8DDBF001EAA1F /* PersonModel.m */; settings = {ASSET_TAGS = (); }; };
+		16AC53721BD8DEDF001EAA1F /* NSString+TKUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC53711BD8DEDF001EAA1F /* NSString+TKUtilities.m */; settings = {ASSET_TAGS = (); }; };
+		16AC53761BD8EB2F001EAA1F /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC53751BD8EB2F001EAA1F /* PersonCell.m */; settings = {ASSET_TAGS = (); }; };
+		16AC537A1BD8EBAF001EAA1F /* CDFInitialsAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC53791BD8EBAF001EAA1F /* CDFInitialsAvatar.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16AC534B1BD8DCCC001EAA1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16AC53291BD8DCCC001EAA1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16AC53301BD8DCCC001EAA1F;
+			remoteInfo = BeautyAddressBook;
+		};
+		16AC53561BD8DCCD001EAA1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16AC53291BD8DCCC001EAA1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16AC53301BD8DCCC001EAA1F;
+			remoteInfo = BeautyAddressBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16AC53311BD8DCCC001EAA1F /* BeautyAddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautyAddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16AC53351BD8DCCC001EAA1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		16AC53371BD8DCCC001EAA1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		16AC53381BD8DCCC001EAA1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		16AC533A1BD8DCCC001EAA1F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		16AC533B1BD8DCCC001EAA1F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		16AC533E1BD8DCCC001EAA1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16AC53401BD8DCCC001EAA1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16AC53431BD8DCCC001EAA1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16AC53451BD8DCCC001EAA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16AC534A1BD8DCCC001EAA1F /* BeautyAddressBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautyAddressBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16AC534E1BD8DCCC001EAA1F /* BeautyAddressBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautyAddressBookTests.m; sourceTree = "<group>"; };
+		16AC53501BD8DCCC001EAA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16AC53551BD8DCCC001EAA1F /* BeautyAddressBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautyAddressBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16AC53591BD8DCCD001EAA1F /* BeautyAddressBookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautyAddressBookUITests.m; sourceTree = "<group>"; };
+		16AC535B1BD8DCCD001EAA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16AC53681BD8DD78001EAA1F /* XHJAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHJAddressBook.h; sourceTree = "<group>"; };
+		16AC53691BD8DD78001EAA1F /* XHJAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHJAddressBook.m; sourceTree = "<group>"; };
+		16AC536C1BD8DDBF001EAA1F /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
+		16AC536D1BD8DDBF001EAA1F /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
+		16AC53701BD8DEDF001EAA1F /* NSString+TKUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TKUtilities.h"; sourceTree = "<group>"; };
+		16AC53711BD8DEDF001EAA1F /* NSString+TKUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TKUtilities.m"; sourceTree = "<group>"; };
+		16AC53741BD8EB2E001EAA1F /* PersonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonCell.h; sourceTree = "<group>"; };
+		16AC53751BD8EB2F001EAA1F /* PersonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCell.m; sourceTree = "<group>"; };
+		16AC53781BD8EBAF001EAA1F /* CDFInitialsAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFInitialsAvatar.h; sourceTree = "<group>"; };
+		16AC53791BD8EBAF001EAA1F /* CDFInitialsAvatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFInitialsAvatar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16AC532E1BD8DCCC001EAA1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16AC53471BD8DCCC001EAA1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16AC53521BD8DCCC001EAA1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16AC53281BD8DCCC001EAA1F = {
+			isa = PBXGroup;
+			children = (
+				16AC53331BD8DCCC001EAA1F /* BeautyAddressBook */,
+				16AC534D1BD8DCCC001EAA1F /* BeautyAddressBookTests */,
+				16AC53581BD8DCCD001EAA1F /* BeautyAddressBookUITests */,
+				16AC53321BD8DCCC001EAA1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16AC53321BD8DCCC001EAA1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16AC53311BD8DCCC001EAA1F /* BeautyAddressBook.app */,
+				16AC534A1BD8DCCC001EAA1F /* BeautyAddressBookTests.xctest */,
+				16AC53551BD8DCCC001EAA1F /* BeautyAddressBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16AC53331BD8DCCC001EAA1F /* BeautyAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				16AC53771BD8EB8D001EAA1F /* Library */,
+				16AC53731BD8EAFB001EAA1F /* View */,
+				16AC536F1BD8DEA6001EAA1F /* Categorys */,
+				16AC536B1BD8DD95001EAA1F /* Model */,
+				16AC53671BD8DD61001EAA1F /* AddressBook */,
+				16AC53371BD8DCCC001EAA1F /* AppDelegate.h */,
+				16AC53381BD8DCCC001EAA1F /* AppDelegate.m */,
+				16AC533A1BD8DCCC001EAA1F /* ViewController.h */,
+				16AC533B1BD8DCCC001EAA1F /* ViewController.m */,
+				16AC533D1BD8DCCC001EAA1F /* Main.storyboard */,
+				16AC53401BD8DCCC001EAA1F /* Assets.xcassets */,
+				16AC53421BD8DCCC001EAA1F /* LaunchScreen.storyboard */,
+				16AC53451BD8DCCC001EAA1F /* Info.plist */,
+				16AC53341BD8DCCC001EAA1F /* Supporting Files */,
+			);
+			path = BeautyAddressBook;
+			sourceTree = "<group>";
+		};
+		16AC53341BD8DCCC001EAA1F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16AC53351BD8DCCC001EAA1F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16AC534D1BD8DCCC001EAA1F /* BeautyAddressBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				16AC534E1BD8DCCC001EAA1F /* BeautyAddressBookTests.m */,
+				16AC53501BD8DCCC001EAA1F /* Info.plist */,
+			);
+			path = BeautyAddressBookTests;
+			sourceTree = "<group>";
+		};
+		16AC53581BD8DCCD001EAA1F /* BeautyAddressBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16AC53591BD8DCCD001EAA1F /* BeautyAddressBookUITests.m */,
+				16AC535B1BD8DCCD001EAA1F /* Info.plist */,
+			);
+			path = BeautyAddressBookUITests;
+			sourceTree = "<group>";
+		};
+		16AC53671BD8DD61001EAA1F /* AddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				16AC53681BD8DD78001EAA1F /* XHJAddressBook.h */,
+				16AC53691BD8DD78001EAA1F /* XHJAddressBook.m */,
+			);
+			name = AddressBook;
+			sourceTree = "<group>";
+		};
+		16AC536B1BD8DD95001EAA1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16AC536C1BD8DDBF001EAA1F /* PersonModel.h */,
+				16AC536D1BD8DDBF001EAA1F /* PersonModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		16AC536F1BD8DEA6001EAA1F /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				16AC53701BD8DEDF001EAA1F /* NSString+TKUtilities.h */,
+				16AC53711BD8DEDF001EAA1F /* NSString+TKUtilities.m */,
+			);
+			name = Categorys;
+			sourceTree = "<group>";
+		};
+		16AC53731BD8EAFB001EAA1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16AC53741BD8EB2E001EAA1F /* PersonCell.h */,
+				16AC53751BD8EB2F001EAA1F /* PersonCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		16AC53771BD8EB8D001EAA1F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				16AC53781BD8EBAF001EAA1F /* CDFInitialsAvatar.h */,
+				16AC53791BD8EBAF001EAA1F /* CDFInitialsAvatar.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16AC53301BD8DCCC001EAA1F /* BeautyAddressBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16AC535E1BD8DCCD001EAA1F /* Build configuration list for PBXNativeTarget "BeautyAddressBook" */;
+			buildPhases = (
+				16AC532D1BD8DCCC001EAA1F /* Sources */,
+				16AC532E1BD8DCCC001EAA1F /* Frameworks */,
+				16AC532F1BD8DCCC001EAA1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeautyAddressBook;
+			productName = BeautyAddressBook;
+			productReference = 16AC53311BD8DCCC001EAA1F /* BeautyAddressBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16AC53491BD8DCCC001EAA1F /* BeautyAddressBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16AC53611BD8DCCD001EAA1F /* Build configuration list for PBXNativeTarget "BeautyAddressBookTests" */;
+			buildPhases = (
+				16AC53461BD8DCCC001EAA1F /* Sources */,
+				16AC53471BD8DCCC001EAA1F /* Frameworks */,
+				16AC53481BD8DCCC001EAA1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16AC534C1BD8DCCC001EAA1F /* PBXTargetDependency */,
+			);
+			name = BeautyAddressBookTests;
+			productName = BeautyAddressBookTests;
+			productReference = 16AC534A1BD8DCCC001EAA1F /* BeautyAddressBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16AC53541BD8DCCC001EAA1F /* BeautyAddressBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16AC53641BD8DCCD001EAA1F /* Build configuration list for PBXNativeTarget "BeautyAddressBookUITests" */;
+			buildPhases = (
+				16AC53511BD8DCCC001EAA1F /* Sources */,
+				16AC53521BD8DCCC001EAA1F /* Frameworks */,
+				16AC53531BD8DCCC001EAA1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16AC53571BD8DCCD001EAA1F /* PBXTargetDependency */,
+			);
+			name = BeautyAddressBookUITests;
+			productName = BeautyAddressBookUITests;
+			productReference = 16AC53551BD8DCCC001EAA1F /* BeautyAddressBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16AC53291BD8DCCC001EAA1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = hackxhj;
+				TargetAttributes = {
+					16AC53301BD8DCCC001EAA1F = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 9DV836NYMJ;
+					};
+					16AC53491BD8DCCC001EAA1F = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 9DV836NYMJ;
+						TestTargetID = 16AC53301BD8DCCC001EAA1F;
+					};
+					16AC53541BD8DCCC001EAA1F = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 9DV836NYMJ;
+						TestTargetID = 16AC53301BD8DCCC001EAA1F;
+					};
+				};
+			};
+			buildConfigurationList = 16AC532C1BD8DCCC001EAA1F /* Build configuration list for PBXProject "BeautyAddressBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16AC53281BD8DCCC001EAA1F;
+			productRefGroup = 16AC53321BD8DCCC001EAA1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16AC53301BD8DCCC001EAA1F /* BeautyAddressBook */,
+				16AC53491BD8DCCC001EAA1F /* BeautyAddressBookTests */,
+				16AC53541BD8DCCC001EAA1F /* BeautyAddressBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16AC532F1BD8DCCC001EAA1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16AC53441BD8DCCC001EAA1F /* LaunchScreen.storyboard in Resources */,
+				16AC53411BD8DCCC001EAA1F /* Assets.xcassets in Resources */,
+				16AC533F1BD8DCCC001EAA1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16AC53481BD8DCCC001EAA1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16AC53531BD8DCCC001EAA1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16AC532D1BD8DCCC001EAA1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16AC536E1BD8DDBF001EAA1F /* PersonModel.m in Sources */,
+				16AC53761BD8EB2F001EAA1F /* PersonCell.m in Sources */,
+				16AC533C1BD8DCCC001EAA1F /* ViewController.m in Sources */,
+				16AC53391BD8DCCC001EAA1F /* AppDelegate.m in Sources */,
+				16AC536A1BD8DD78001EAA1F /* XHJAddressBook.m in Sources */,
+				16AC53361BD8DCCC001EAA1F /* main.m in Sources */,
+				16AC53721BD8DEDF001EAA1F /* NSString+TKUtilities.m in Sources */,
+				16AC537A1BD8EBAF001EAA1F /* CDFInitialsAvatar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16AC53461BD8DCCC001EAA1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16AC534F1BD8DCCC001EAA1F /* BeautyAddressBookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16AC53511BD8DCCC001EAA1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16AC535A1BD8DCCD001EAA1F /* BeautyAddressBookUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16AC534C1BD8DCCC001EAA1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16AC53301BD8DCCC001EAA1F /* BeautyAddressBook */;
+			targetProxy = 16AC534B1BD8DCCC001EAA1F /* PBXContainerItemProxy */;
+		};
+		16AC53571BD8DCCD001EAA1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16AC53301BD8DCCC001EAA1F /* BeautyAddressBook */;
+			targetProxy = 16AC53561BD8DCCD001EAA1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16AC533D1BD8DCCC001EAA1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16AC533E1BD8DCCC001EAA1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16AC53421BD8DCCC001EAA1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16AC53431BD8DCCC001EAA1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16AC535C1BD8DCCD001EAA1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		16AC535D1BD8DCCD001EAA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16AC535F1BD8DCCD001EAA1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BeautyAddressBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hua.BeautyAddressBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		16AC53601BD8DCCD001EAA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BeautyAddressBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hua.BeautyAddressBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		16AC53621BD8DCCD001EAA1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BeautyAddressBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hua.BeautyAddressBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeautyAddressBook.app/BeautyAddressBook";
+			};
+			name = Debug;
+		};
+		16AC53631BD8DCCD001EAA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BeautyAddressBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hua.BeautyAddressBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeautyAddressBook.app/BeautyAddressBook";
+			};
+			name = Release;
+		};
+		16AC53651BD8DCCD001EAA1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BeautyAddressBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hua.BeautyAddressBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BeautyAddressBook;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		16AC53661BD8DCCD001EAA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BeautyAddressBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hua.BeautyAddressBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BeautyAddressBook;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16AC532C1BD8DCCC001EAA1F /* Build configuration list for PBXProject "BeautyAddressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16AC535C1BD8DCCD001EAA1F /* Debug */,
+				16AC535D1BD8DCCD001EAA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16AC535E1BD8DCCD001EAA1F /* Build configuration list for PBXNativeTarget "BeautyAddressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16AC535F1BD8DCCD001EAA1F /* Debug */,
+				16AC53601BD8DCCD001EAA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		16AC53611BD8DCCD001EAA1F /* Build configuration list for PBXNativeTarget "BeautyAddressBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16AC53621BD8DCCD001EAA1F /* Debug */,
+				16AC53631BD8DCCD001EAA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		16AC53641BD8DCCD001EAA1F /* Build configuration list for PBXNativeTarget "BeautyAddressBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16AC53651BD8DCCD001EAA1F /* Debug */,
+				16AC53661BD8DCCD001EAA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16AC53291BD8DCCC001EAA1F /* Project object */;
+}
