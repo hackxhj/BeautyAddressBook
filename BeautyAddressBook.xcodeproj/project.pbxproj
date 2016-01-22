@@ -15,11 +15,11 @@
 		16AC53441BD8DCCC001EAA1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16AC53421BD8DCCC001EAA1F /* LaunchScreen.storyboard */; };
 		16AC534F1BD8DCCC001EAA1F /* BeautyAddressBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC534E1BD8DCCC001EAA1F /* BeautyAddressBookTests.m */; };
 		16AC535A1BD8DCCD001EAA1F /* BeautyAddressBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC53591BD8DCCD001EAA1F /* BeautyAddressBookUITests.m */; };
-		16AC536A1BD8DD78001EAA1F /* XHJAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC53691BD8DD78001EAA1F /* XHJAddressBook.m */; settings = {ASSET_TAGS = (); }; };
-		16AC536E1BD8DDBF001EAA1F /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC536D1BD8DDBF001EAA1F /* PersonModel.m */; settings = {ASSET_TAGS = (); }; };
-		16AC53721BD8DEDF001EAA1F /* NSString+TKUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC53711BD8DEDF001EAA1F /* NSString+TKUtilities.m */; settings = {ASSET_TAGS = (); }; };
-		16AC53761BD8EB2F001EAA1F /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC53751BD8EB2F001EAA1F /* PersonCell.m */; settings = {ASSET_TAGS = (); }; };
-		16AC537A1BD8EBAF001EAA1F /* CDFInitialsAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC53791BD8EBAF001EAA1F /* CDFInitialsAvatar.m */; settings = {ASSET_TAGS = (); }; };
+		16AC536A1BD8DD78001EAA1F /* XHJAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC53691BD8DD78001EAA1F /* XHJAddressBook.m */; };
+		16AC536E1BD8DDBF001EAA1F /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC536D1BD8DDBF001EAA1F /* PersonModel.m */; };
+		16AC53721BD8DEDF001EAA1F /* NSString+TKUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC53711BD8DEDF001EAA1F /* NSString+TKUtilities.m */; };
+		16AC53761BD8EB2F001EAA1F /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC53751BD8EB2F001EAA1F /* PersonCell.m */; };
+		16AC537A1BD8EBAF001EAA1F /* CDFInitialsAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC53791BD8EBAF001EAA1F /* CDFInitialsAvatar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -272,7 +272,7 @@
 				TargetAttributes = {
 					16AC53301BD8DCCC001EAA1F = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 9DV836NYMJ;
+						DevelopmentTeam = YWNDCBQNP2;
 					};
 					16AC53491BD8DCCC001EAA1F = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -484,11 +484,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BeautyAddressBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hua.BeautyAddressBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -496,11 +499,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BeautyAddressBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hua.BeautyAddressBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -571,6 +577,7 @@
 				16AC53601BD8DCCD001EAA1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16AC53611BD8DCCD001EAA1F /* Build configuration list for PBXNativeTarget "BeautyAddressBookTests" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +586,7 @@
 				16AC53631BD8DCCD001EAA1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16AC53641BD8DCCD001EAA1F /* Build configuration list for PBXNativeTarget "BeautyAddressBookUITests" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +595,7 @@
 				16AC53661BD8DCCD001EAA1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
