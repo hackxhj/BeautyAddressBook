@@ -14,6 +14,8 @@
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,strong)NSMutableArray *listContent;
 @property (strong, nonatomic) NSMutableArray *sectionTitles;
+
+@property (strong, nonatomic) PersonModel *people;
 @end
 
 #define  mainWidth [UIScreen mainScreen].bounds.size.width
@@ -35,18 +37,18 @@
     _tableShow.dataSource=self;
     [self.view addSubview:_tableShow];
     _tableShow.sectionIndexBackgroundColor=[UIColor clearColor];
-     _tableShow.sectionIndexColor = [UIColor blackColor];
+    _tableShow.sectionIndexColor = [UIColor blackColor];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
-    [self initData];
-     dispatch_sync(dispatch_get_main_queue(), ^
+        [self initData];
+        dispatch_sync(dispatch_get_main_queue(), ^
                       {
                           [self setTitleList];
                           [_tableShow reloadData];
                       });
     });
     
- 
+    
 }
 
 
@@ -62,17 +64,17 @@
         PersonModel *pm=_listContent[i][0];
         for(int j=0;j<_sectionTitles.count;j++)
         {
-          if(pm.sectionNumber==j)
-              [existTitles addObject:self.sectionTitles[j]];
+            if(pm.sectionNumber==j)
+                [existTitles addObject:self.sectionTitles[j]];
         }
     }
     
     
-
- 
+    
+    
     [self.sectionTitles removeAllObjects];
     self.sectionTitles =existTitles;
-
+    
 }
 
 
@@ -100,14 +102,14 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return [_listContent count];
-
+    
 }
 //对应的section有多少row
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
- 
+    
     return [[_listContent objectAtIndex:(section)] count];
- 
+    
 }
 //cell的高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -118,43 +120,73 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-   return 22;
+    return 22;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
- 
-       if(self.sectionTitles==nil||self.sectionTitles.count==0)
-           return nil;
-        UIView *contentView = [[UIView alloc] init];
-        contentView.backgroundColor =[UIColor colorWithPatternImage:[UIImage imageNamed:@"uitableviewbackground"]];
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 100, 22)];
-        label.backgroundColor = [UIColor clearColor];
-        NSString *sectionStr=[self.sectionTitles objectAtIndex:(section)];
-        [label setText:sectionStr];
-       [contentView addSubview:label];
-        return contentView;
-
+    
+    if(self.sectionTitles==nil||self.sectionTitles.count==0)
+        return nil;
+    UIView *contentView = [[UIView alloc] init];
+    contentView.backgroundColor =[UIColor colorWithPatternImage:[UIImage imageNamed:@"uitableviewbackground"]];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 100, 22)];
+    label.backgroundColor = [UIColor clearColor];
+    NSString *sectionStr=[self.sectionTitles objectAtIndex:(section)];
+    [label setText:sectionStr];
+    [contentView addSubview:label];
+    return contentView;
+    
 }
 
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-       static NSString *cellIdenfer=@"addressCell";
-        PersonCell *personcell=(PersonCell*)[tableView dequeueReusableCellWithIdentifier:cellIdenfer];
-        if(personcell==nil)
-        {
-            personcell=[[PersonCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdenfer];
-        }
-        
-        NSArray *sectionArr=[_listContent objectAtIndex:indexPath.section];
-        PersonModel *person = (PersonModel *)[sectionArr objectAtIndex:indexPath.row];
-        [personcell setData:person];
-        
-        return personcell;
- 
+    static NSString *cellIdenfer=@"addressCell";
+    PersonCell *personcell=(PersonCell*)[tableView dequeueReusableCellWithIdentifier:cellIdenfer];
+    if(personcell==nil)
+    {
+        personcell=[[PersonCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdenfer];
+    }
+    
+    NSArray *sectionArr=[_listContent objectAtIndex:indexPath.section];
+    _people = (PersonModel *)[sectionArr objectAtIndex:indexPath.row];
+    [personcell setData:_people];
+    
+    return personcell;
+    
 }
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // NSString *key = [self.listContent objectAtIndex:indexPath.section];
+    NSArray *sectionArr=[_listContent objectAtIndex:indexPath.section];
+    self.people = (PersonModel *)[sectionArr objectAtIndex:indexPath.row];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:_people.phonename
+                                                    message:_people.tel
+                                                   delegate:self
+                                          cancelButtonTitle:@"取消"
+                                          otherButtonTitles:@"本地打电话",@"网络电话",  nil];
+    [alert show];
+}
+
+#pragma mark - UIAlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    UIApplication *app = [UIApplication sharedApplication];
+    if (buttonIndex == 1)
+    {
+        [app openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", alertView.message]]];
+    }else if (buttonIndex == 2)
+    {
+        
+    }
+}
+
+
 
 //开启右侧索引条
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
